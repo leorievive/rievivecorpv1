@@ -7,19 +7,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--maroon:#AB5654;--purple:#7471EA;--cream:#F7F3EE;--warm-white:#FDFAF6;--dark:#2C1F1F;--mid:#6B5050;--gradient:linear-gradient(160deg,#7471EA 0%,#AB5654 100%)}
+:root{--maroon:#AB5654;--purple:#7471EA;--cream:#F7F3EE;--warm-white:#FDFAF6;--dark:#2C1F1F;--mid:#6B5050;--gradient:linear-gradient(160deg,#7471EA 0%,#AB5654 100%);--purple:#7471EA;--purple-soft:rgba(116,113,234,0.08);--purple-mid:rgba(116,113,234,0.18)}
 html{scroll-behavior:smooth}
 body{font-family:'Jost',sans-serif;background:var(--warm-white);color:var(--dark);overflow-x:hidden}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:24px 48px;display:flex;align-items:center;background:rgba(253,250,246,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(171,86,84,0.1)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:24px 48px;display:flex;align-items:center;background:rgba(253,250,246,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(116,113,234,0.2)}
 .nav-brand{font-family:'Antic Didone',serif;font-size:20px;color:var(--maroon);letter-spacing:0.1em}
 .hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;padding-top:73px}
 .hero-left{background:var(--cream);padding:80px 64px;display:flex;flex-direction:column;justify-content:center}
-.hero-eyebrow{font-size:11px;font-weight:500;letter-spacing:0.25em;text-transform:uppercase;color:var(--maroon);margin-bottom:28px;opacity:0;animation:fadeUp 0.8s ease 0.2s forwards}
+.hero-eyebrow{font-size:11px;font-weight:500;letter-spacing:0.25em;text-transform:uppercase;color:var(--purple);margin-bottom:28px;opacity:0;animation:fadeUp 0.8s ease 0.2s forwards}
 .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(44px,4.5vw,68px);font-weight:400;line-height:1.1;color:var(--dark);margin-bottom:24px;opacity:0;animation:fadeUp 0.8s ease 0.4s forwards}
 .hero h1 em{font-style:italic;color:var(--maroon)}
 .hero-sub{font-size:15px;font-weight:300;line-height:1.8;color:var(--mid);margin-bottom:40px;max-width:380px;opacity:0;animation:fadeUp 0.8s ease 0.6s forwards}
 .hero-pills{display:flex;gap:10px;flex-wrap:wrap;opacity:0;animation:fadeUp 0.8s ease 0.7s forwards}
-.pill{font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--maroon);padding:6px 14px;border:1px solid rgba(171,86,84,0.35);border-radius:100px;background:rgba(171,86,84,0.06)}
+.pill{font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--purple);padding:6px 14px;border:1px solid rgba(116,113,234,0.35);border-radius:100px;background:rgba(116,113,234,0.07)}
 .hero-right{position:relative;overflow:hidden}
 .hero-right img{width:100%;height:100%;object-fit:cover;object-position:center}
 .divider{height:1px;background:linear-gradient(to right,transparent,rgba(171,86,84,0.25),transparent);margin:0 72px}
@@ -29,26 +29,26 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:24px 48px;display:fl
 .offer-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:rgba(171,86,84,0.12);border:1px solid rgba(171,86,84,0.12)}
 .offer-card{background:var(--warm-white);padding:48px;transition:background 0.3s ease}
 .offer-card:hover{background:var(--cream)}
-.offer-num{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:rgba(171,86,84,0.15);line-height:1;margin-bottom:20px}
+.offer-num{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:rgba(116,113,234,0.2);line-height:1;margin-bottom:20px}
 .offer-card h3{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500;color:var(--maroon);margin-bottom:14px}
 .offer-card p{font-size:15px;font-weight:300;line-height:1.7;color:var(--mid)}
 .includes{background:var(--cream);padding:96px 72px}
 .includes-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
 .includes h2{margin-bottom:36px}
 .includes-list{list-style:none;display:flex;flex-direction:column;gap:0}
-.includes-list li{display:flex;align-items:flex-start;gap:14px;font-size:15px;font-weight:300;color:var(--mid);line-height:1.5;padding:14px 0;border-bottom:1px solid rgba(171,86,84,0.1)}
+.includes-list li{display:flex;align-items:flex-start;gap:14px;font-size:15px;font-weight:300;color:var(--mid);line-height:1.5;padding:14px 0;border-bottom:1px solid rgba(116,113,234,0.2)}
 .includes-list li:last-child{border-bottom:none}
 .includes-list li::before{content:'—';color:var(--maroon);flex-shrink:0}
 .pricing-box{border:1px solid rgba(171,86,84,0.2);padding:48px;background:var(--warm-white);position:relative}
 .pricing-box::before{content:'';position:absolute;top:0;left:0;width:48px;height:3px;background:var(--maroon)}
 .pricing-label{font-size:11px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--maroon);margin-bottom:28px}
-.pricing-row{display:flex;justify-content:space-between;align-items:baseline;padding:16px 0;border-bottom:1px solid rgba(171,86,84,0.1)}
+.pricing-row{display:flex;justify-content:space-between;align-items:baseline;padding:16px 0;border-bottom:1px solid rgba(116,113,234,0.2)}
 .pricing-row:last-of-type{border-bottom:none}
 .pricing-row .pax{font-size:14px;font-weight:400;color:var(--dark)}
 .pricing-row .price{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--maroon)}
 .pricing-note{margin-top:24px;font-size:12px;color:var(--mid);font-style:italic;line-height:1.7;padding-top:20px;border-top:1px solid rgba(171,86,84,0.1)}
 .why{padding:96px 72px;position:relative;overflow:hidden}
-.why::before{content:'"';position:absolute;top:20px;right:72px;font-family:'Cormorant Garamond',serif;font-size:280px;color:rgba(171,86,84,0.06);line-height:1;pointer-events:none}
+.why::before{content:'"';position:absolute;top:20px;right:72px;font-family:'Cormorant Garamond',serif;font-size:280px;color:rgba(116,113,234,0.1);line-height:1;pointer-events:none}
 .why blockquote{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3vw,42px);font-weight:400;font-style:italic;line-height:1.4;color:var(--dark);max-width:760px;margin-bottom:28px}
 .why p{font-size:15px;font-weight:300;color:var(--mid);line-height:1.8;max-width:540px}
 .gradient-band{height:4px;background:var(--gradient)}
@@ -122,7 +122,7 @@ footer p{font-size:12px;font-weight:300;color:var(--mid)}
 <section class="includes">
   <div class="includes-inner">
     <div>
-      <p class="section-label">Every Session Includes</p>
+      <p class="section-label" style="color:var(--purple)">Every Session Includes</p>
       <h2>Everything handled.<br>Nothing to worry about.</h2>
       <ul class="includes-list">
         <li>1-hour guided mat Pilates class</li>
@@ -157,7 +157,7 @@ footer p{font-size:12px;font-weight:300;color:var(--mid)}
 <section class="form-section" id="enquire">
   <div class="form-inner">
     <div class="form-intro">
-      <p class="section-label">Get in Touch</p>
+      <p class="section-label" style="color:var(--purple)">Get in Touch</p>
       <h2>Let's build something for your team.</h2>
       <p>Fill in the details below and we'll get back to you within 24 hours with a custom quote tailored to your team size and location.</p>
       <span class="response-badge">Response within 24 hours</span>
